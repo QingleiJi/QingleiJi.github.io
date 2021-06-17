@@ -8,9 +8,9 @@ profile:
   align: right
   image: prof_pic.jpg
   address: >
-    <p>A411</p>
-    <p>Brinellvägen 83</p>
+    <p>A411, Brinellvägen 83</p>
     <p>Stockholm 11428</p>
+    <p>Sweden</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
