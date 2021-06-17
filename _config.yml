@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 # Site settings
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Qinglei
+first_name: Qinglei Ji
 middle_name:
-last_name: Ji
+last_name:
 email: qinglei@kth.se
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics.
@@ -40,12 +40,12 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: QingleiJi# your GitHub user name
-gitlab_username: # your GitLab user name
+github_username: QingleiJi
+gitlab_username:
 twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: Qinglei Ji
 scholar_userid: # your Google Scholar ID
-orcid_id: # your ORCID ID
+orcid_id: 0000-0001-9221-0918
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -58,7 +58,7 @@ wikidata_id: # your wikidata id
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
+google_analytics: UA-168191336-1 # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 # -----------------------------------------------------------------------------
@@ -74,7 +74,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: Qinglei # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
