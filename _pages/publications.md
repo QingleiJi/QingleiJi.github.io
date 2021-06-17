@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description: Journal/conference paper, patents.
-years: [2021, 2020, 2019, 2018]
+years: [2021, 2020, 2019, 2018, 2017]
 nav: true
 scholar:
   last_name: Ji
