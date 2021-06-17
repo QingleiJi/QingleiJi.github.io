@@ -1,18 +1,5 @@
 ---
 ---
-@inproceedings{braintasks2020,
-  title        = {Modeling Task Effects on Meaning Representation in the Brain via Zero-Shot MEG Prediction},
-  author       = {Toneva<nobr><em>*</em></nobr>, Mariya and Stretcu<nobr><em>*</em></nobr>, Otilia and Póczos, Barnabás and Wehbe, Leila and Mitchell, Tom},
-  booktitle    = {Proceedings of the Thirty-fourth Conference on Neural Information Processing Systems},
-  year         = {2020},
-  organization = {Neural Information Processing Systems},
-  abbr         = {NeurIPS},
-  pdf          = {brain-tasks-neurips/arxiv.pdf},
-  arxiv        = {2009.08424},
-  video        = {https://youtu.be/-SXlEhSTSi8},
-  code         = {https://github.com/otiliastr/brain_task_effect},
-  abstract     = {{How meaning is represented in the brain is still one of the big open questions in neuroscience. Does a word (e.g., bird) always have the same representation, or does the task under which the word is processed alter its representation (answering "can you eat it?" versus "can it fly?")? The brain activity of subjects who read the same word while performing different semantic tasks has been shown to differ across tasks. However, it is still not understood how the task itself contributes to this difference. In the current work, we study Magnetoencephalography (MEG) brain recordings of participants tasked with answering questions about concrete nouns. We investigate the effect of the task (i.e. the question being asked) on the processing of the concrete noun by predicting the millisecond-resolution MEG recordings as a function of both the semantics of the noun and the task. Using this approach, we test several hypotheses about the task-stimulus interactions by comparing the zero-shot predictions made by these hypotheses for novel tasks and nouns not seen during training. We find that incorporating the task semantics significantly improves the prediction of MEG recordings, across participants. The improvement occurs 475-550ms after the participants first see the word, which corresponds to what is considered to be the ending time of semantic processing for a word. These results suggest that only the end of semantic processing of a word is task-dependent, and pose a challenge for future research to formulate new hypotheses for earlier task effects as a function of the task and stimuli.}}
-}
 
 @inproceedings{stretcu2020baics,
   title     = {Coarse-to-Fine Curriculum Learning},
@@ -20,7 +7,6 @@
   booktitle = {International Conference on Learning Representations (ICLR) Workshop on Bridging AI and Cognitive Science (BAICS)},
   year      = {2020},
   abbr      = {ICLR},
-  pdf       = {coarse-to-fine/coarse-to-fine-baics.pdf},
   abstract  = {{When faced with learning challenging new tasks, humans often follow sequences of steps that allow them to incrementally build up the necessary skills for performing these new tasks. However, in machine learning, models are most often trained to solve the target tasks directly. Inspired by human learning, we propose a novel curriculum learning approach which decomposes challenging tasks into sequences of easier intermediate goals, that are used to pre-train a model before tackling the original task. We focus on classification tasks, and design the intermediate tasks using an automatically constructed label hierarchy. We train the model at each level of the hierarchy, from coarse labels to fine labels, transferring acquired knowledge across these levels. For instance, the model will first learn to distinguish animals from objects, and use this acquired knowledge when learning to classify more fine-grained classes such as "cat", "dog", "car", and "truck". We evaluate our method on several established datasets and show performance gains of up to 7% increase in classification accuracy.}},
   video     = {https://youtu.be/hkY-Qlh4Hhc},
   code      = {https://github.com/otiliastr/coarse-to-fine-curriculum}
