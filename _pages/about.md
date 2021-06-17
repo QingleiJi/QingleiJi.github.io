@@ -17,4 +17,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-My research interests focus on Additive manufacturing (3D/4D printing), Microfluidics and Structure engineering (Aeronautics).
+My research interests focus on:
+- 4D printing
+  - When smart materials encounter 3D printing, the printed objects can change their shape or other properties upon external stimuli. Our work is to improve the precision of this kind of actuation using closed loop method with traditional and modern control techniques.
+- Soft robots
+  - Soft robots are a subset of robots constructed from highly compliant materials. We build innovative soft robots with enhanced controllability and functionality.
+- Reinforcement learning
+  - We deploy reinforcement learning systems to train agents that can precisely control the soft actuation that are hard to be modeled.
