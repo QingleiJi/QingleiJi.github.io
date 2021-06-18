@@ -26,6 +26,18 @@ Photo from the poster of movie [Promise at Dawn](https://www.imdb.com/title/tt50
 
 犹太人的身份使他们麻烦不断。在被邻居恶意举报，警察不公的搜查之后，妮娜带着儿子罗曼大声咒骂邻居们，并且让邻居们好好看看自己的儿子：“他会成为法国大使、成为作家、是会拿荣誉勋章的人、是将军、会穿上伦敦定制的西装！”在邻居的嘲笑声中，罗曼难堪又痛苦地跑开，却不知，他这一生，从这一刻起，注定了不平凡。
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://byk2hw.db.files.1drv.com/y4mfuieial_4wPZkUA3jMnVyWGfYXYJ5asz9D6pvMJVSNgh4sKp0OnWQaJBYN_S_Hamdi3IedPvw3vCyCRdffvPpn3kvFgl-MUOvm2U9ySUPmOcKkS3z7_8S42Y40h8yIi1puA_mf8KsiMuUs3LpiROPRnnweXPz_p4GVgM2w-hwU4x2AWEXSTUVGLb9ZTVhUr5atUH4Ok05c_fli9JNsVqbA?width=1440&height=603&cropmode=none">
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ site.baseurl }}/assets/img/7.jpg">
+    </div>
+</div>
+<div class="caption">
+    A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
+</div>
+
 <img src="https://byk2hw.db.files.1drv.com/y4mfuieial_4wPZkUA3jMnVyWGfYXYJ5asz9D6pvMJVSNgh4sKp0OnWQaJBYN_S_Hamdi3IedPvw3vCyCRdffvPpn3kvFgl-MUOvm2U9ySUPmOcKkS3z7_8S42Y40h8yIi1puA_mf8KsiMuUs3LpiROPRnnweXPz_p4GVgM2w-hwU4x2AWEXSTUVGLb9ZTVhUr5atUH4Ok05c_fli9JNsVqbA?width=1440&height=603&cropmode=none" width="720" height="300" />
 
 贫穷与不公从未将强势的母亲打垮，她也不会甘于靠着在家做女帽来勉强维持生计。妮娜找来一位平庸潦倒的法国演员，假扮成从巴黎来的高级设计师，为她的“新宅·大沙龙 (Maison Nouvelle Grand Slon ）”揭幕。这场沙龙使母亲的服装店一举成名，成为当地名流争相购买服装的店面。
