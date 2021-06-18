@@ -1,6 +1,6 @@
 ---
 layout: page
-date: 2020-08-20 07:59:00-0400
+date: 2020-08-20
 inline: true
 ---
 
