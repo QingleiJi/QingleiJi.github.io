@@ -9,8 +9,7 @@ last_name:
 email: qinglei@kth.se
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+footer_text:
 icon: 🔬 # the emoji used as the favicon
 url: # the base hostname & protocol for your site
 baseurl: # /al-folio # the subpath of your site, e.g. /blog/
@@ -56,7 +55,7 @@ keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  Feel free to contact me.
 
 google_analytics: UA-168191336-1 # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
