@@ -11,9 +11,14 @@ Due to the hardware limit, which can be the processer ability or the communicati
 
 As a further test, here, a raspberry pi 4 with 4GB memory is used as the external device. A very simple model as shown in **Figure 1** is running on it while communicating with Simulink running on a PC.
 
-<img src="https://dskqfq.db.files.1drv.com/y4m45zUcTAFmjnpOVdmq25RxY1IZaYgn6l6d_mvZDkKvnHptnmq8p-TVjW46QhQ1Fbr4C0aOpFmRHGPp8cHOEthsA92rRHKXj54ZOpx3gZx9LBNqOX_L3_2-OPXJcoEcd5SOZwfAyKhEwBPwx9djnhSN1PtG5shqy7p2fBYS1Upjwjf18d4-w_7i_64gf_HSQFOaG2QfGMew7ZV2wuF7zVzSA?width=1024&height=540&cropmode=none" width="1024" height="540" />
-
-<center><b>Figure 1:</b> Simulink model used to test the system.</center>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://dskqfq.db.files.1drv.com/y4m45zUcTAFmjnpOVdmq25RxY1IZaYgn6l6d_mvZDkKvnHptnmq8p-TVjW46QhQ1Fbr4C0aOpFmRHGPp8cHOEthsA92rRHKXj54ZOpx3gZx9LBNqOX_L3_2-OPXJcoEcd5SOZwfAyKhEwBPwx9djnhSN1PtG5shqy7p2fBYS1Upjwjf18d4-w_7i_64gf_HSQFOaG2QfGMew7ZV2wuF7zVzSA?width=1024&height=540&cropmode=none">
+    </div>
+</div>
+<div class="caption">
+    Simulink model used to test the system.
+</div>
 
 ### Wireless communication *via* router
 
@@ -55,9 +60,14 @@ To test if it is the communication speed that limits the minimum sampling time, 
 
 **Figure 2** plots the data from **Table 1** and **Table 2** in the same figure. Notice that there is difference between wireless and wired communication is almost ignorable. Thus it is reasonable to conclude that the sampling time limit is caused by the computation capability of the microprocessor rather than the communication method. Furthermore, if compared with minimum sampling time of the Arduino board, the one of Raspberry Pi is much smaller, which should probably caused by the tremendous computation improvement of the Cortex-A72 SoC.
 
-<img src="https://dskpfq.db.files.1drv.com/y4moN8DfN4xCoFpcQ4RAazteKR03-GUqKo7MvTg0RcpJkKwDIfFHko2K39DLw-EalbLP1cMVQos9fXhXFbnpVLcZ50WIA3y1oNe6IRCEFvbKDLU9w7yPwA9JG_hIO5s5P7gmDWACNpBr7eXsVNsS2mZ3MS1BKn9uLgZ8kaBzysmrPNU0FSxVNlIjwR-gAVOQ9mvmQ3254675-xid_GyFYuHww?width=1024&height=685&cropmode=none" width="1024" height="685" />
-
-<center><b>Figure 2:</b> Real time cost versus sampling time for different systems.</center>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://dskpfq.db.files.1drv.com/y4moN8DfN4xCoFpcQ4RAazteKR03-GUqKo7MvTg0RcpJkKwDIfFHko2K39DLw-EalbLP1cMVQos9fXhXFbnpVLcZ50WIA3y1oNe6IRCEFvbKDLU9w7yPwA9JG_hIO5s5P7gmDWACNpBr7eXsVNsS2mZ3MS1BKn9uLgZ8kaBzysmrPNU0FSxVNlIjwR-gAVOQ9mvmQ3254675-xid_GyFYuHww?width=1024&height=685&cropmode=none">
+    </div>
+</div>
+<div class="caption">
+    Real time cost versus sampling time for different systems.
+</div>
 
 ### Reference Links
 
