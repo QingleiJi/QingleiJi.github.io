@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Closed loop controlled 4D printing"
+title: 'Closed loop controlled 4D printing'
 description: Increase the precision of 4D printing using closed loop control methods.
 img: /assets/pdf/IEEE_TIE_CL4DP/CL4DP.jpg
 importance: 1
