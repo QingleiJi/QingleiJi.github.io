@@ -4,7 +4,6 @@ description: Chinese version of the post 'Unauthorized charge from google cloud'
 date: 2020-06-03
 layout: post
 ---
-Photo from [Google Cloud](https://cloud.google.com/).
 
 **2020-05-06**
 
