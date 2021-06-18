@@ -9,20 +9,20 @@ I am using the latest Raspberry Pi 4B board and programming using *C*. It is fou
 
 The problem can be solved by updating the *WiringPi* to 2.52. You can not automatically get this version using the *apt-get* command as follows as it is not an official release yet.
 
-```csharp
+{% highlight csharp linenos %}
 sudo apt-get install wiringpi
-```
+{% endhighlight %}
 
 To update to 2.52, do the following:
 
-```csharp
+{% highlight csharp linenos %}
 cd /tmp
 wget https://project-downloads.drogon.net/wiringpi-latest.deb
 sudo dpkg -i wiringpi-latest.deb
-```
+{% endhighlight %}
 
 Then, have fun with your [blink.c](http://wiringpi.com/examples/blink/)!
-```c
+{% highlight c linenos %}
 #include <wiringPi.h>
 int main (void)
 {
@@ -35,7 +35,7 @@ int main (void)
   }
   return 0 ;
 }
-```
+{% endhighlight %}
 
 This post will be useless when *WiringPi* 2.52 or later versions become an official release.
 

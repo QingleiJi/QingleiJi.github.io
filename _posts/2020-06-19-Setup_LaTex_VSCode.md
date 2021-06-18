@@ -12,9 +12,9 @@ Visual Studio Code (VS Code) is a very powerful source-code editor that supports
 4. Go to settings in VS Code and open the *settings.json* file. Add the code in the *Appendix* of this post. Please notice my comments and customize the code accordingly. Save the *json* file.
 5.  Now, you should be able to compile your LaTeX files by clicking *Ctrl + Alt + B*. After the generation of your .pdf file, you can view it by clicking *Ctrl+Alt+V*. For the forward search function, you can either right-click and select *SyncTeX from cursor*, or use shortcut *Ctrl + Alt + J* to jump to the .pdf content where you stayed in the TeX file.
 6. If you want to use the inverse/backforward search function, go to settings-option in the *SumatraPDF* software. You can install this software using the link provided in the comments in *Appendix* code. Add the following text into the *Set inverse search command-line* space. Customize the folder directory with your own.
-```csharp
+{% highlight csharp linenos %}
 "C:\\Program Files\\Microsoft VS Code\\Code.exe" "C:\\Program Files\\Microsoft VS Code\\resources\\app\\out\\cli.js" -r -g "%f:%l"
-```
+{% endhighlight %}
 7. Now, you can use the inverse search function by double click on the pdf file!
 
 It is important to keep in mind that the settings can malfunction when the VS Code updates or for different operating systems. So try to search for more guides if this is not working.

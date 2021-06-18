@@ -79,7 +79,7 @@ To test if it is the communication speed that limits the minimum sampling time, 
 
 ### Appendix code (Python)
 
-```python
+{% highlight python linenos %}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -105,5 +105,5 @@ ax.yaxis.set_ticks_position('left')
 ax.xaxis.set_ticks_position('bottom')
 plt.savefig('time_cost_comparision.png', format='png', dpi=300)
 plt.show()
-```
+{% endhighlight %}
 
