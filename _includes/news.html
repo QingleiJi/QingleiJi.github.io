@@ -6,8 +6,9 @@
       {% assign news = site.news | reverse %}
       {% for item in news limit: site.news_limit %}
       <tr>
-        <th scope="row"><span class="badge blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
-            {{ item.date | date: "%b %-d, %Y" }}
+        <th scope="row"><span class="badge blue darken-1 font-weight-bold text-uppercase align-middle date ml-3"
+            min-width="100px">{{
+            item.date | date: "%b %-d, %Y" }}
           </span></th>
         <td>
           {% if item.inline %}
