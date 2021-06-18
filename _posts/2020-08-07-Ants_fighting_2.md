@@ -11,15 +11,27 @@ Last time, the two groups of ants had a very simple [fight](https://qinglei.tech
 
 OK. First round, we try a detection range with $$5$$, meaning that each ant can only sees a small field.
 
-<img src="/images/2020-08-07-Ants_fighting_2/detection distance 5.gif" width="600" height="600" />
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/2020-08-07-Ants_fighting_2/detection distance 5.gif">
+    </div>
+</div>
 
 From the animation, we can see that small clusters of the same group of ants can be observed. However, the ants are not showing very obvious tendency to fight as a team. What about increasing the detection distance of each ant to $$10$$? 
 
-<img src="/images/2020-08-07-Ants_fighting_2/detection distance 10.gif" width="600" height="600" />
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/2020-08-07-Ants_fighting_2/detection distance 10.gif">
+    </div>
+</div>
 
 This time, ants of a larger scale decides to move into several rallying points. Also, some unique ants are too far away from their people and do not know where to go. What if the ants can see further to $$15$$?
 
-<img src="/images/2020-08-07-Ants_fighting_2/detection distance 15.gif" width="600" height="600" />
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/2020-08-07-Ants_fighting_2/detection distance 15.gif">
+    </div>
+</div>
 
 Now, it is very obvious that almost all the the ants assembles quickly to the center. The distribution of the two groups looks like two perpendicular stripes. I guess they all prefer to avoid the enemies and fall to the embrace of the friends.
 
@@ -27,7 +39,7 @@ Well, that's it for today. An interesting game for me, maybe for the ants as wel
 
 ### Appendix code
 
-```python
+{% highlight python linenos %}
 import numpy as np
 import random
 import matplotlib.pyplot as plt
@@ -217,4 +229,4 @@ def main():
 
 if __name__ == '__main__':
     main()
-```
+{% endhighlight %}
