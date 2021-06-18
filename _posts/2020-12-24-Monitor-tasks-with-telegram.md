@@ -22,7 +22,11 @@ Telegram bot is a third-party application running inside Telegram. One can easil
 
 First you have to install [Telegram](https://telegram.org/) to your phone and create an account. Then, search for 'BotFather' in Contacts and create connection with it. 'BotFather' will be the manager of all your own bots. Then send '/newbot' to BotFather and follow the steps, you will create a bot with your customized name. Most importantly, you'll see the **token** of your new bot. You can send '/mybots' to check all your bots and manage them. Clicking on the '@YourBotName', you can go to the dialogue window with your bot. With the **token**, you can access the API of the bot and send message from it. For this specific case, we only need to use the bot to send message to myself. So we have to know the **chat_id** of my telegram account. To get it, search for a bot called 'userinfobot' and start a dialogue with it. The bot will send your id to you automatically.
 
-<img src="https://db3pap007files.storage.live.com/y4m__vC-gCP1tF18g1o4YjZ3x0iFm571eKuUiy3zxxizkz-2AOGcVYkUVPFxyj8G-UQBDXtgzIuPdPuub9ipSgj3gN7Gfy76_pQBY4jsr3hgDu4zUN9gREjMLyQNGMnLH7ZyhVVbTVqCcqk3CVNPHtaLQyXXPXWUN_y4YriQ5HKnbvBxxAQu5FO9oUrkRH2w8eU?width=1489&height=999&cropmode=none" width="1489" height="999" />
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://db3pap007files.storage.live.com/y4m__vC-gCP1tF18g1o4YjZ3x0iFm571eKuUiy3zxxizkz-2AOGcVYkUVPFxyj8G-UQBDXtgzIuPdPuub9ipSgj3gN7Gfy76_pQBY4jsr3hgDu4zUN9gREjMLyQNGMnLH7ZyhVVbTVqCcqk3CVNPHtaLQyXXPXWUN_y4YriQ5HKnbvBxxAQu5FO9oUrkRH2w8eU?width=1489&height=999&cropmode=none">
+    </div>
+</div>
 
 Then let's go to python on your computer side. First install the library *telegram* by executing:
 
@@ -65,6 +69,10 @@ def send_image(imageurl, image_caption):
 
 Now if you need to send a text message or an image with its caption, you can just call *send_message* or *send_image*. Here are some screenshots of how I am informed of my Python program progresses.
 
-<img src="https://db3pap007files.storage.live.com/y4mgpWCv6x9GG2MIU7S1YhNd68736nteknmtO0MBCPL5TC1LWVtxjoKK5MNH_ZrN32E-LEgHDj2sGwZIW5EVZMNCZMRMv2vFX18-TPYUM9gDXrExUTkCrJtaOncNNxOKVQ2fyZ5gQK59PCYspAMN0XR2XFkyE2fDa4YMea_KY8njgzvd3d5ajSCd4i-21PlaJ7E?width=1702&height=1730&cropmode=none" width="1702" height="1730" />
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://db3pap007files.storage.live.com/y4mgpWCv6x9GG2MIU7S1YhNd68736nteknmtO0MBCPL5TC1LWVtxjoKK5MNH_ZrN32E-LEgHDj2sGwZIW5EVZMNCZMRMv2vFX18-TPYUM9gDXrExUTkCrJtaOncNNxOKVQ2fyZ5gQK59PCYspAMN0XR2XFkyE2fDa4YMea_KY8njgzvd3d5ajSCd4i-21PlaJ7E?width=1702&height=1730&cropmode=none">
+    </div>
+</div>
 
 I wish this post will be helpful to your own work and bring you some inspirations, and I wish everyone a joyful Christmas eve!
