@@ -30,10 +30,8 @@ Photo from the poster of movie [Promise at Dawn](https://www.imdb.com/title/tt50
     <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="https://byk2hw.db.files.1drv.com/y4mfuieial_4wPZkUA3jMnVyWGfYXYJ5asz9D6pvMJVSNgh4sKp0OnWQaJBYN_S_Hamdi3IedPvw3vCyCRdffvPpn3kvFgl-MUOvm2U9ySUPmOcKkS3z7_8S42Y40h8yIi1puA_mf8KsiMuUs3LpiROPRnnweXPz_p4GVgM2w-hwU4x2AWEXSTUVGLb9ZTVhUr5atUH4Ok05c_fli9JNsVqbA?width=1440&height=603&cropmode=none">
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ site.baseurl }}/assets/img/7.jpg">
-    </div>
 </div>
+
 <div class="caption">
     A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
 </div>
