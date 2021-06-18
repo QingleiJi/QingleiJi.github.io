@@ -36,7 +36,7 @@ Red army pushes towards the blue home on the top while some red individual that 
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="[/assets/img/2020-08-05-Ants_fighting/equal_ants_10_epoch_animation.gif](https://dcltca.db.files.1drv.com/y4m_GO6TFYzL48YZTzYPp9ejszzR50kUkCPvC3CsLxSOEH3uePC4ECvzTKtyxy41vRNwYmSdukaE6Q-ZvyV-qBaTTeV_vNCtPBvSxnGhHkqDPmSgEQRaWVOvH0Tw1y_ixKUmJ3JDIKiIuNTwPYAHZeeZlJvui6aZZmy-IUwXj9RaoMG3mSyq9MnOT2h-6fFMkwQpTz8gGX_2TDrEEtqEwy7rg?width=800&height=800&cropmode=none)">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/2020-08-05-Ants_fighting/equal_ants_10_epoch_animation.gif">
     </div>
 </div>
 
