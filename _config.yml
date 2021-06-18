@@ -54,8 +54,8 @@ work_url: # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 
-contact_note: >
-  Feel free to contact me.
+# contact_note: >
+#   Feel free to contact me.
 
 google_analytics: UA-168191336-1 # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
