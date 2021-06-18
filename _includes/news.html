@@ -1,11 +1,10 @@
-<div class="news">
-  <h2>news</h2>
-  {% if site.news %}
+<div class="news mt-3 p-0">
+  <h1 class="title mb-4 p-0">news</h1>
   {% assign news = site.news | reverse %}
   {% for item in news limit: site.news_limit %}
   <div class="row p-0">
     <div class="col-sm-2 p-0">
-      <span class="badge blue darken-1 font-weight-bold text-uppercase align-middle date ml-3">
+      <span class="badge light-green darken-1 font-weight-bold text-uppercase align-middle date ml-3">
         {{ item.date | date: "%b %-d, %Y" }}
       </span>
     </div>
@@ -15,7 +14,4 @@
     </div>
   </div>
   {% endfor %}
-  {% else %}
-  <p>No news so far...</p>
-  {% endif %}
 </div>
