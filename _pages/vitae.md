@@ -38,7 +38,7 @@ nav: true
 - Chemical Engineering Journal
 
 ## Software skills
-MATLAB, Python, C++
+- MATLAB, Python, C++
 
 ## Languages
-Chinese, English, French, Swedish (beginner)
+- Chinese, English, French, Swedish (beginner)
