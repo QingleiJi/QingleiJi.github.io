@@ -19,10 +19,10 @@ nav: true
 
 ## Experience
 - Visiting student, State Key Laboratory for Turbulence and Complex Systems
-    - Host: Prof. Huiling Duan
+    - Host: Prof. [Huiling Duan](http://duan-lab.pku.edu.cn/){:target="http://duan-lab.pku.edu.cn/"}
     - Peking University, China, 2017
-- Visiting student, High-Speed Fluids Imaging Laboratory
-    - Host: Prof. Sigurdur T. Thoroddsen
+- Visiting student, [High-Speed Fluids Imaging Laboratory](https://highspeedfluids.kaust.edu.sa/){:target="https://highspeedfluids.kaust.edu.sa/"}
+    - Host: Prof. [Sigurdur T. Thoroddsen](https://www.kaust.edu.sa/en/study/faculty/sigurdur-thoroddsen){:target="https://www.kaust.edu.sa/en/study/faculty/sigurdur-thoroddsen"}
     - King Abdullah University of Science and Technology, Saudi Arabia, 2016
           
 
