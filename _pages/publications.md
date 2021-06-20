@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Journal/conference paper, patents.
+description: Journal/conference paper, patents.\<nobr><em>*</em></nobr> equal contribution.
 years: [2021, 2020, 2019, 2018, 2017]
 nav: true
 ---
