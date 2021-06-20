@@ -1,18 +1,22 @@
 "Wang":
-  - firstname: ["Lihui", "L."]
+  - firstname: ["Lihui"]
     url: https://www.kth.se/profile/lihuiw
 
   - firstname: ["Xi Vincent", "X.V."]
     url: https://www.kth.se/profile/wangxi
 
 "Feng":
-  - firstname: ["Lei", "L."]
+  - firstname: ["Lei"]
     url: https://www.kth.se/profile/lfeng
 
 "Zhang":
-  - firstname: ["Jia Ming", "J."]
+  - firstname: ["Jia Ming"]
+    url: https://scholar.google.com/citations?user=nVYvXCwAAAAJ&hl=en
+
+"Zhang*":
+  - firstname: ["Jia Ming"]
     url: https://scholar.google.com/citations?user=nVYvXCwAAAAJ&hl=en
 
 "Duan":
-  - firstname: ["Huiling", "H."]
+  - firstname: ["Huiling"]
     url: http://duan-lab.pku.edu.cn/
