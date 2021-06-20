@@ -24,3 +24,5 @@ My research interests focus on:
   - Soft robots are a subset of robots constructed from highly compliant materials. We build innovative soft robots with enhanced controllability and functionality.
 - Reinforcement learning
   - We deploy reinforcement learning systems to train agents that can precisely control the soft actuation that are hard to be modeled.
+
+Welcome to get in [contact](mailto://qinglei.ji.acad@gmail.com) for any interest!
