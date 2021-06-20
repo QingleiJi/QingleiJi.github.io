@@ -36,3 +36,9 @@ nav: true
 ## Reviewer
 - Robotics and Computer-Integrated Manufacturing
 - Chemical Engineering Journal
+
+## Software skills
+MATLAB, Python, C++
+
+## Languages
+Chinese, English, French, Swedish (beginner)
