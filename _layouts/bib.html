@@ -47,7 +47,7 @@
       <em><b>{{author.first}} {{author.last}}</b></em>,
       {% else %}
       {% if coauthor_url %}
-      <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>,
+      <a href="{{coauthor_url}}" target="_blank" style="color:black">{{author.first}} {{author.last}}</a>,
       {% else %}
       {{author.first}} {{author.last}},
       {% endif %}
@@ -57,7 +57,7 @@
       and <em><b>{{author.first}} {{author.last}}</b></em>
       {% else %}
       {% if coauthor_url %}
-      and <a href="{{coauthor_url}}" target="_blank">{{author.first}} {{author.last}}</a>
+      and <a href="{{coauthor_url}}" target="_blank" style="color:black">{{author.first}} {{author.last}}</a>
       {% else %}
       and {{author.first}} {{author.last}}
       {% endif %}

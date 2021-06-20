@@ -138,7 +138,7 @@ github: [metadata]
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: Ji
+  last_name: Ji*
   first_name: Qinglei
 
   style: apa
