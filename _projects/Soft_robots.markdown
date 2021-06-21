@@ -8,3 +8,7 @@ importance: 2
 ---
 
 The core of our interest in the soft robot topic is to design and build novel mechatronic systems, with a special focus on soft systems, using 3D printing technology.
+
+## Closed loop controlled pneumatic soft actuator
+
+## Soft quadruped robot
