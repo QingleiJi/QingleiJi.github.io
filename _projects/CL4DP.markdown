@@ -18,7 +18,7 @@ In the project, we take 4D printed thermal Shape Memory Polymer (SMP), which is 
 One limitation of SMP introduced actuation is that it only have two states: the permanent shape and the temporary shape. We find that the recovery speed of SMP is influenced by the stimulus temperature. By applying closed loop control over the 4D printed shape, we can then tune the stimulus temperature during the recovery process so that the recovery process of SMP is controlled. We can also terminate the recovery process before the SMP recovers to its permanent shape. As a result we can achieve any arbitrary intermedia shape instead of the two states aforementioned.
 
 ## Results
-To solve the above closed loop control problem, we started with building a data-driven model for the recovery process of SMP. Based on the model, a simple Proportional–Integral (PI) controller is developed and implemented. Good control results are achieved which proves the feasibility of the method. Then, an optimal controller developed using Q-learning method is also applied and outperforms the PI controller in terms of time efficiency.
+To solve the above closed loop control problem, we started with building a data-driven model for the recovery process of SMP [[1]](#1). Based on the model, a simple Proportional–Integral (PI) controller is developed and implemented. Good control results are achieved which proves the feasibility of the method. Then, an optimal controller developed using Q-learning method is also applied and outperforms the PI controller in terms of time efficiency.
 
 ## Conclusions
 With model based controllers, robust and fast shape control of SMP can be realized. However, it should be noted that the model is not always accurate and the control environment is not always perfect. In many 4D printing studies the acquisitions of the actuation model are hard. Thus we start to think if we can perform model-free control of the SMP by learning the control policy directly from the experimental knowledge. This is the next step we are working on.
@@ -26,6 +26,4 @@ With model based controllers, robust and fast shape control of SMP can be realiz
 
 ## References
 <a id="1">[1]</a> 
-Dijkstra, E. W. (1968). 
-Go to statement considered harmful. 
-Communications of the ACM, 11(3), 147-148.
+Q. Ji et al., "[Feedback control for the precise shape morphing of 4D Printed Shape Memory Polymer](https://ieeexplore.ieee.org/abstract/document/9280377){:target="https://ieeexplore.ieee.org/abstract/document/9280377"}," in IEEE Transactions on Industrial Electronics.
