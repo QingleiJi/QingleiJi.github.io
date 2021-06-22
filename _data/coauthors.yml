@@ -5,7 +5,7 @@
   - firstname: ["Xi Vincent", "X.V."]
     url: https://www.kth.se/profile/wangxi
 
-"Wang<b>*</b>":
+"Wang*":
   - firstname: ["Lihui"]
     url: https://www.kth.se/profile/lihuiw
 
@@ -13,7 +13,7 @@
   - firstname: ["Lei"]
     url: https://www.kth.se/profile/lfeng
 
-"Feng<b>*</b>":
+"Feng*":
   - firstname: ["Lei"]
     url: https://www.kth.se/profile/lfeng
 
@@ -21,7 +21,7 @@
   - firstname: ["Jia Ming"]
     url: https://scholar.google.com/citations?user=nVYvXCwAAAAJ&hl=en
 
-"Zhang<b>†</b>":
+"Zhang†":
   - firstname: ["Jia Ming"]
     url: https://scholar.google.com/citations?user=nVYvXCwAAAAJ&hl=en
 
@@ -29,6 +29,6 @@
   - firstname: ["Huiling"]
     url: http://duan-lab.pku.edu.cn/
 
-"Duan<b>*</b>":
+"Duan*":
   - firstname: ["Huiling"]
     url: http://duan-lab.pku.edu.cn/
