@@ -18,7 +18,7 @@ nav: true
 
 
 ## Experience
-- Visiting student, State Key Laboratory for Turbulence and Complex Systems
+- Visiting student, [State Key Laboratory for Turbulence and Complex Systems](https://ltcs.pku.edu.cn/en/about/index.html){:target="https://ltcs.pku.edu.cn/en/about/index.html"}
     - Host: Prof. [Huiling Duan](http://duan-lab.pku.edu.cn/){:target="http://duan-lab.pku.edu.cn/"}
     - Peking University, China, 2017
 - Visiting student, [High-Speed Fluids Imaging Laboratory](https://highspeedfluids.kaust.edu.sa/){:target="https://highspeedfluids.kaust.edu.sa/"}
