@@ -2,20 +2,19 @@
 layout: about
 title: about
 permalink: /
-description: From 2018, I am a PhD student at KTH Royal Institute of Technology, Sweden.
+description: A411, Brinellvägen 83, Stockholm 11428, Sweden
 
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
-    <p>A411, Brinellvägen 83</p>
-    <p>Stockholm 11428</p>
-    <p>Sweden</p>
+  # address: >
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+
+From 2018, I am a PhD student at KTH Royal Institute of Technology, Sweden. I am co-advised by [Lei Feng](https://www.kth.se/profile/lfeng), [Lihui Wang](https://www.kth.se/profile/lihuiw) and Xi [(Vincent) Wang](https://www.kth.se/profile/wangxi).
 
 My research interests focus on:
 - 4D printing
