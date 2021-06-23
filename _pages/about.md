@@ -7,7 +7,7 @@ description: Lab A411, Brinellvägen 83, 114 28 Stockholm, Sweden
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
+  # address: >
     
 
 news: true  # includes a list of news items
