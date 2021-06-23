@@ -6,7 +6,7 @@
       {% assign news = site.news | reverse %}
       {% for item in news limit: site.news_limit %}
       <tr>
-        <th scope="row"><span class="badge blue darken-1 font-weight-bold text-uppercase align-middle date ml-3"
+        <th scope="row"><span class="badge blue darken-1 font-weight-bold text-uppercase align-middle date"
             style="width:80px;">{{
             item.date | date: "%b %-d, %Y" }}
           </span></th>
