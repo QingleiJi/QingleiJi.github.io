@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Lab A411, Brinellvägen 83, 114 28 Stockholm, Sweden
+description: Lab [A411](https://www.kth.se/places/room/id/c657cc3c-a930-4e7b-9085-e75f01d55f2d?l=en), Brinellvägen 83, 114 28 Stockholm, Sweden
 
 profile:
   align: right
