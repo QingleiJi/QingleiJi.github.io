@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Lab <a href="https://www.kth.se/places/room/id/c657cc3c-a930-4e7b-9085-e75f01d55f2d" class="page-description" target="_blank">A411</a>, Brinellvägen 83, 114 28 Stockholm, Sweden
+description: Lab <a href="https://www.google.com/maps/place/KTH+Industriell+Produktion/@59.3536926,18.0641259,18z/data=!4m5!3m4!1s0x465f9d1370b0dad3:0x6766c1267decd858!8m2!3d59.3534179!4d18.0637247?authuser=1" class="page-description" target="_blank">A411</a>, Brinellvägen 83, 114 28 Stockholm, Sweden
 
 profile:
   align: right
