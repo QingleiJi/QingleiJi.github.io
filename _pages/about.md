@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Lab <a href="https://www.kth.se/places/room/id/c657cc3c-a930-4e7b-9085-e75f01d55f2d?l=en" class="page-description" target="_blank">A411</a>, Brinellvägen 83, 114 28 Stockholm, Sweden
+description: Lab <a href="https://www.kth.se/places/room/id/c657cc3c-a930-4e7b-9085-e75f01d55f2d" class="page-description" target="_blank">A411</a>, Brinellvägen 83, 114 28 Stockholm, Sweden
 
 profile:
   align: right
