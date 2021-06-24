@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Qinglei Ji   | blank</title>
+<title>Qinglei Ji   | Raspberry Pi 4B no GPIO output in C program: Solved!</title>
 <meta name="description" content="This is the personal website of Qinglei Ji">
 
 <!-- Open Graph -->
@@ -29,7 +29,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/blog/2020/RaspberryPi-no-gpio-output-issue/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -124,8 +124,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 projects
@@ -171,70 +169,72 @@
     <!-- Content -->
 
     <div class="container mt-5">
-      <div class="post">
+      
 
-  <div class="header-bar">
-    <h1>blog</h1>
-    <h2></h2>
-  </div>
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Raspberry Pi 4B no GPIO output in C program: Solved!</h1>
+    <p class="post-meta">June 9, 2020</p>
+  </header>
+
+  <article class="post-content">
+    <p>I am using the latest Raspberry Pi 4B board and programming using <em>C</em>. It is found that when using the <a href="http://wiringpi.com/">WiringPi</a> library to control the GPIO output (digital/pwm), there is no actual voltage output while the program can just compile and run. On the other hand, the GPIO works normally if program with <em>Python</em> using the <a href="https://pypi.org/project/RPi.GPIO/">RPi.GPIO</a> module.</p>
+
+<p>The problem can be solved by updating the <em>WiringPi</em> to 2.52. You can not automatically get this version using the <em>apt-get</em> command as follows as it is not an official release yet.</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="n">sudo</span> <span class="n">apt</span><span class="p">-</span><span class="k">get</span> <span class="n">install</span> <span class="n">wiringpi</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>To update to 2.52, do the following:</p>
+
+<figure class="highlight"><pre><code class="language-csharp" data-lang="csharp"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="code"><pre><span class="n">cd</span> <span class="p">/</span><span class="n">tmp</span>
+<span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="c1">//project-downloads.drogon.net/wiringpi-latest.deb</span>
+<span class="n">sudo</span> <span class="n">dpkg</span> <span class="p">-</span><span class="n">i</span> <span class="n">wiringpi</span><span class="p">-</span><span class="n">latest</span><span class="p">.</span><span class="n">deb</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Then, have fun with your <a href="http://wiringpi.com/examples/blink/">blink.c</a>!</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="code"><pre><span class="cp">#include &lt;wiringPi.h&gt;
+</span><span class="kt">int</span> <span class="nf">main</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">wiringPiSetup</span> <span class="p">()</span> <span class="p">;</span>
+  <span class="n">pinMode</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">OUTPUT</span><span class="p">)</span> <span class="p">;</span>
+  <span class="k">for</span> <span class="p">(;;)</span>
+  <span class="p">{</span>
+    <span class="n">digitalWrite</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">HIGH</span><span class="p">)</span> <span class="p">;</span> <span class="n">delay</span> <span class="p">(</span><span class="mi">500</span><span class="p">)</span> <span class="p">;</span>
+    <span class="n">digitalWrite</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span>  <span class="n">LOW</span><span class="p">)</span> <span class="p">;</span> <span class="n">delay</span> <span class="p">(</span><span class="mi">500</span><span class="p">)</span> <span class="p">;</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="mi">0</span> <span class="p">;</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>This post will be useless when <em>WiringPi</em> 2.52 or later versions become an official release.</p>
+
+<p><a href="http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/">Reference page</a> for updating <em>WiringPi</em>.</p>
+
+<p><a href="https://pinout.xyz/pinout/wiringpi">Raspberry Pi Pinout</a> in different schemes.</p>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/Monitor-tasks-with-telegram/">Monitor your computer tasks with TelegramBot</a></h3>
-        <p class="post-meta">December 24, 2020</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/Ants_fighting_2/">Ants fighting! Round 2.</a></h3>
-        <p class="post-meta">August 7, 2020</p>
-        <p>Follwing the battle the other day, the same groups of ants decide to change the battle strategy this time.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/Ants_fighting/">Ants fighting!</a></h3>
-        <p class="post-meta">August 5, 2020</p>
-        <p>Ants seems to be a marvellous species. They act as one, in thousands and millions.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/Heroisme/">Héroïsme</a></h3>
-        <p class="post-meta">June 26, 2020</p>
-        <p>A paragraph that I like most in the book 'Vie de Michel-Ange'. Written in French.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/RoboMaster/">RobooooMaster!</a></h3>
-        <p class="post-meta">June 22, 2020</p>
-        <p>RoboMaster, I believe is the best robot combat competition in the world!</p>
-      </li>
-    
-  </ul>
+  </article>
 
   
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
 
 </div>
 

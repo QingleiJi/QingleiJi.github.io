@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Qinglei Ji   | What's the minimum sampling time for a Simulink-RaspberryPi system?</title>
+<meta name="description" content="This is the personal website of Qinglei Ji">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/blog/2020/RaspberryPi-Simulink-Sampling-time/">
+
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- Theming-->
+
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168191336-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168191336-1');
+</script>
+
+
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav sticky-bottom-footer">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Qinglei Ji</span>   
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                projects
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/vitae/">
+                vitae
+                
+              </a>
+          </li>
+          
+          
+          
+            <div class = "toggle-container">
+              <a id = "light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">What's the minimum sampling time for a Simulink-RaspberryPi system?</h1>
+    <p class="post-meta">June 6, 2020</p>
+  </header>
+
+  <article class="post-content">
+    <p>Simulink offers a very easy-to-use platform to build your systems and then download-run them in external devices. At the same time, Simulink can act as a user interface for observing and controlling in real time the executed system. In most cases, one would expect the system to not only run in real time, but also owns small enough sampling times so that the external signals can be recorded with more details to avoid the <a href="https://en.wikipedia.org/wiki/Aliasing">Aliasing</a> problem and in some cases the control commands can all be used to regulate the system in time.</p>
+
+<p>Due to the hardware limit, which can be the processer ability or the communication environment, the minimum sampling time is limited to some value. Thus it is vital to get conscious of this value for different devices so that the sampling time can be set correctly. In our prior research, we have been using  <em>Arduino Mega 2560</em> as the external device. According to our experience, a minimum sampling time can be set as \(T_s = 0.05\ s\). In this case, the system to be downloaded to the board can be large enough (under the board memory limit) and the communication is realized through <em>USB</em> cable.</p>
+
+<p>As a further test, here, a raspberry pi 4 with 4GB memory is used as the external device. A very simple model as shown in <strong>Figure 1</strong> is running on it while communicating with Simulink running on a PC.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://dskqfq.db.files.1drv.com/y4m45zUcTAFmjnpOVdmq25RxY1IZaYgn6l6d_mvZDkKvnHptnmq8p-TVjW46QhQ1Fbr4C0aOpFmRHGPp8cHOEthsA92rRHKXj54ZOpx3gZx9LBNqOX_L3_2-OPXJcoEcd5SOZwfAyKhEwBPwx9djnhSN1PtG5shqy7p2fBYS1Upjwjf18d4-w_7i_64gf_HSQFOaG2QfGMew7ZV2wuF7zVzSA?width=1024&amp;height=540&amp;cropmode=none" />
+    </div>
+</div>
+<div class="caption">
+    Simulink model used to test the system.
+</div>
+
+<h3 id="wireless-communication-via-router">Wireless communication <em>via</em> router</h3>
+
+<p>The Raspberry Pi is firstly linked to the PC with a <a href="https://www.tendacn.com/en/product/ac10.html">Tenda AC10 Router</a> wirelessly. Different sampling times are used. For each case, the real time passed (noted as the real time cost) is recorded using an independent timer when the system running time is displaying \(10\ s\). The data are shown in <strong>Table 1</strong>. It is obvious that for \(T_s\leq 0.004\ s\), which is \(4\ ms\), there appears a noticeable difference between the system time and the real time, meaning the overrun of the system.</p>
+
+<center><b>Table 1:</b> Time cost for different sampling times through wireless communication.</center>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Sampling time \(T_s\)</th>
+      <th style="text-align: center">System running time</th>
+      <th style="text-align: center">Real time cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0.05 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">9.98 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.02 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">10.23 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.01 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">9.4 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.008 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">9.86 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.005 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">10.09 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.004 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">12.62 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.003 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">16.57 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.002 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">25.35 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.001 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">50.40 s</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="wired-communication-via-ethernet">Wired communication <em>via</em> ethernet</h3>
+
+<p>To test if it is the communication speed that limits the minimum sampling time, ethernet cable that directly connect the PC and the raspberry pi 4 is used in this case. Similar tests are performed and the data are shown in <strong>Table 2</strong>. Still, the time difference occurs when the sampling time reduces less than \(40\ ms\).</p>
+
+<center><b>Table 2:</b> Time cost for different sampling times through wired communication.</center>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Sampling time \(T_s\)</th>
+      <th style="text-align: center">System running time</th>
+      <th style="text-align: center">Real time cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">0.05 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">10.19 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.02 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">10.14 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.01 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">9.91 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.008 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">10.07 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.005 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">10.00 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.004 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">12.16 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.003 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">16.45 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.002 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">24.50 s</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0.001 s</td>
+      <td style="text-align: center">10 s</td>
+      <td style="text-align: center">49.85 s</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="discussion">Discussion</h3>
+
+<p><strong>Figure 2</strong> plots the data from <strong>Table 1</strong> and <strong>Table 2</strong> in the same figure. Notice that there is difference between wireless and wired communication is almost ignorable. Thus it is reasonable to conclude that the sampling time limit is caused by the computation capability of the microprocessor rather than the communication method. Furthermore, if compared with minimum sampling time of the Arduino board, the one of Raspberry Pi is much smaller, which should probably caused by the tremendous computation improvement of the Cortex-A72 SoC.</p>
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="https://dskpfq.db.files.1drv.com/y4moN8DfN4xCoFpcQ4RAazteKR03-GUqKo7MvTg0RcpJkKwDIfFHko2K39DLw-EalbLP1cMVQos9fXhXFbnpVLcZ50WIA3y1oNe6IRCEFvbKDLU9w7yPwA9JG_hIO5s5P7gmDWACNpBr7eXsVNsS2mZ3MS1BKn9uLgZ8kaBzysmrPNU0FSxVNlIjwR-gAVOQ9mvmQ3254675-xid_GyFYuHww?width=1024&amp;height=685&amp;cropmode=none" />
+    </div>
+</div>
+<div class="caption">
+    Real time cost versus sampling time for different systems.
+</div>
+
+<h3 id="reference-links">Reference Links</h3>
+
+<p><a href="https://se.mathworks.com/help/supportpkg/arduino/ug/detect-and-fix-task-overruns-on-arduino-hardware.html">Overruns on Arduino</a></p>
+
+<p><a href="https://se.mathworks.com/help/supportpkg/raspberrypi/ug/detect-and-fix-overruns-on-raspberry_pi-hardware.html">Overruns on Raspberry pi</a></p>
+
+<h3 id="appendix-code-python">Appendix code (Python)</h3>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+</pre></td><td class="code"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">Sampling_time</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.05</span><span class="p">,</span><span class="mf">0.02</span><span class="p">,</span><span class="mf">0.01</span><span class="p">,</span><span class="mf">0.008</span><span class="p">,</span><span class="mf">0.005</span><span class="p">,</span><span class="mf">0.004</span><span class="p">,</span><span class="mf">0.003</span><span class="p">,</span><span class="mf">0.002</span><span class="p">,</span><span class="mf">0.001</span><span class="p">]</span>
+<span class="n">Real_time_cost_wireless</span> <span class="o">=</span> <span class="p">[</span><span class="mf">9.98</span><span class="p">,</span><span class="mf">10.23</span><span class="p">,</span><span class="mf">9.4</span><span class="p">,</span><span class="mf">9.86</span><span class="p">,</span><span class="mf">10.09</span><span class="p">,</span><span class="mf">12.62</span><span class="p">,</span><span class="mf">16.57</span><span class="p">,</span><span class="mf">25.35</span><span class="p">,</span><span class="mf">50.40</span><span class="p">]</span>
+<span class="n">Real_time_cost_wired</span> <span class="o">=</span> <span class="p">[</span><span class="mf">10.19</span><span class="p">,</span><span class="mf">10.14</span><span class="p">,</span><span class="mf">9.91</span><span class="p">,</span><span class="mf">10.07</span><span class="p">,</span><span class="mf">10.00</span><span class="p">,</span><span class="mf">12.16</span><span class="p">,</span><span class="mf">16.45</span><span class="p">,</span><span class="mf">24.50</span><span class="p">,</span><span class="mf">49.85</span><span class="p">]</span>
+
+<span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Sampling_time</span><span class="p">,</span><span class="n">Real_time_cost_wireless</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">'wireless communication'</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Sampling_time</span><span class="p">,</span><span class="n">Real_time_cost_wired</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s">'wired communication'</span><span class="p">)</span>
+<span class="c1">#plt.yscale('log')
+</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'Sampling time (s)'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'time (s)'</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">.</span><span class="n">legend</span><span class="p">(</span><span class="n">frameon</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.052</span><span class="p">])</span>
+<span class="n">ax</span><span class="p">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">8</span><span class="p">,</span><span class="mi">30</span><span class="p">])</span>
+<span class="c1"># Hide the right and top spines
+</span><span class="n">ax</span><span class="p">.</span><span class="n">spines</span><span class="p">[</span><span class="s">'right'</span><span class="p">].</span><span class="n">set_visible</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">.</span><span class="n">spines</span><span class="p">[</span><span class="s">'top'</span><span class="p">].</span><span class="n">set_visible</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">.</span><span class="n">yaxis</span><span class="p">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s">'left'</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">.</span><span class="n">xaxis</span><span class="p">.</span><span class="n">set_ticks_position</span><span class="p">(</span><span class="s">'bottom'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">'time_cost_comparision.png'</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s">'png'</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+
+  </article>
+
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="sticky-bottom mt-5">
+  <div class="container">
+    &copy; Copyright 2021 Qinglei Ji  .
+    
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+</html>
